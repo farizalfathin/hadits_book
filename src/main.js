@@ -7,15 +7,15 @@ let arrayHadiths
 export function getListHadithBooks() {
     const listHadithBooks = document.getElementById('list-hadith-books');
     const coverBooks = [
-        '../public/images/abu-daud.jpg',
-        '../public/images/ahmad.jpg',
-        '../public/images/bukhari.jpg',
-        '../public/images/darimi.jpg',
-        '../public/images/ibnu-majah.jpg',
-        '../public/images/malik.jpg',
-        '../public/images/muslim.jpg',
-        '../public/images/nasai.jpg',
-        '../public/images/tirmidzi.jpg',
+        'public/images/abu-daud.jpg',
+        'public/images/ahmad.jpg',
+        'public/images/bukhari.jpg',
+        'public/images/darimi.jpg',
+        'public/images/ibnu-majah.jpg',
+        'public/images/malik.jpg',
+        'public/images/muslim.jpg',
+        'public/images/nasai.jpg',
+        'public/images/tirmidzi.jpg',
     ]
     
     axios.get(urlAPI)
@@ -27,7 +27,7 @@ export function getListHadithBooks() {
                         <img class="w-100 object-fit-cover mb-4" src="${coverBooks[index]}" alt="">
                         <h2 class="card-title">${hadith.name}</h2>
                         <p class="card-text">Jumlah Hadits : <b>${hadith.available}</b></p>
-                        <a href="../src/page/${hadith.id}.html" class="btn btn-primary w-75">Selengkapnya</a>
+                        <a href="src/page/${hadith.id}.html" class="btn btn-primary w-75">Selengkapnya</a>
                     </div>
                 </div>`
         }).join("");
