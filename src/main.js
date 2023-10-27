@@ -7,15 +7,15 @@ let arrayHadiths
 export function getListHadithBooks() {
     const listHadithBooks = document.getElementById('list-hadith-books');
     const coverBooks = [
-        'public/images/abu-daud.jpg',
-        'public/images/ahmad.jpg',
-        'public/images/bukhari.jpg',
-        'public/images/darimi.jpg',
-        'public/images/ibnu-majah.jpg',
-        'public/images/malik.jpg',
-        'public/images/muslim.jpg',
-        'public/images/nasai.jpg',
-        'public/images/tirmidzi.jpg',
+        './public/image/abu-daud.jpg',
+        './public/image/ahmad.jpg',
+        './public/image/bukhari.jpg',
+        './public/image/darimi.jpg',
+        './public/image/ibnu-majah.jpg',
+        './public/image/malik.jpg',
+        './public/image/muslim.jpg',
+        './public/image/nasai.jpg',
+        './public/image/tirmidzi.jpg',
     ]
     
     axios.get(urlAPI)
